@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "presentation.html#observations",
+    "href": "presentation.html#observations",
+    "title": "A Generalized Additive Model for Temperature Forecasting in the United States",
+    "section": "Observations",
+    "text": "Observations\n\nObservations are obtained from Castro (2023) and contain U.S. weather stations and SNOTEL stations\nData spans the period from 1 January 2017 to 21 September 2017\n\n\n\n\n\n\n\nFigure 1: Inverse distance weighted interpolation of temp_avg from each station for each day in the data set."
+  },
+  {
+    "objectID": "presentation.html#procedure",
+    "href": "presentation.html#procedure",
+    "title": "A Generalized Additive Model for Temperature Forecasting in the United States",
+    "section": "Procedure",
+    "text": "Procedure\n\nOwing to the fact that this model is a combination of both linear and highly non-linear physical effects, we choose to fit the data set with a Generalized Additive Model, implemented by Hastie (2023).\nOur particular model is\n\n\\[\\text{temp_avg} = \\beta_0 + \\beta_1 (\\text{elevation}) + \\beta_2 (\\text{latitude}) + \\beta_3 (\\text{longitude}) + \\beta_4f(\\text{days}).\\] since we hypothesize the partial derivatives of temp_avg with respect to longitude, latitude and elevation to be roughly constant."
+  }
+]
